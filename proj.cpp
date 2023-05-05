@@ -70,4 +70,5 @@ int main()
 {
     proj ob;
     cout << "guess the person's name by typing characters of their name: " << endl;
+    ob.guess();
 }
