@@ -8,7 +8,7 @@ class proj
 public:
     void guess();
     void getchar();
-    void checking();
+    void check();
 }
 
 void proj::guess()
@@ -24,6 +24,19 @@ void proj::getchar()
 {
     cout << "enter letter " << i + 1 << ": ";
     cin >> n;
+}
+
+void proj::check()
+{
+    if (n == name[i] || n == name[i - 32])
+    {
+        cout << "\nletter " << i + 1 << " is correct" << endl;
+        ++i;
+    }
+    else
+    {
+        cout << "wrong letter, guess the character " << i + 1 << " again: " << endl;
+    }
 }
 
 int main()
