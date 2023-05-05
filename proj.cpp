@@ -3,7 +3,7 @@ using namespace std;
 class proj
 {
     int i = 0;
-    string name = "jal";
+    string name = "yash";
     char n;
 public:
     void guess();
